@@ -26,5 +26,7 @@ public class Main {
         // distinct.run();
         // Reducing reducing = new Reducing(api.getCollection());
         // reducing.run();
+        GroupingBy groupingBy = new GroupingBy(api.getCollection());
+        groupingBy.run();
     }
 }
