@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -28,7 +29,18 @@ public class Main {
         // groupingBy.run();
         // FlatMap flatMap = new FlatMap(names);
         // flatMap.run();
-        Peek peek = new Peek(numbers);
-        peek.run();
+        // Peek peek = new Peek(numbers);
+        // peek.run();
+
+        Map<String, Integer> data = Map.of(
+                "Grits", 235,
+                "Pancakes", 330,
+                "Burrito", 875,
+                "Bacon & Eggs", 450,
+                "Greek Salad", 330,
+                "Caesar Salad", 330,
+                "Sandwich", 435);
+        Calorie calorie = new Calorie(data);
+        calorie.run();
     }
 }
