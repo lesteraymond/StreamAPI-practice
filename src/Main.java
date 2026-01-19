@@ -8,7 +8,7 @@ public class Main {
                 "Hanni", "Minji", "Haerin", "Hyein", "Danielle",
                 "Hanni", "Minji", "Haerin", "Hyein", "Danielle");
         List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        StreamAPI api = StreamAPI.create(numbers);
+        StreamAPI api = StreamAPI.create(names);
 
         // ForEach forEach = new ForEach(api.getCollection());
         // forEach.run();
@@ -22,5 +22,7 @@ public class Main {
         // limit.run();
         // Collect collect = new Collect(api.getCollection());
         // collect.run();
+        Distinct distinct = new Distinct(api.getCollection());
+        distinct.run();
     }
 }
