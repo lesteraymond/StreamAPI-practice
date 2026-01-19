@@ -12,7 +12,9 @@ public class Main {
         // forEach.run();
         // Map map = new Map(api.getCollection());
         // map.run();
-        Filter filter = new Filter(api.getCollection());
-        filter.run();
+        // Filter filter = new Filter(api.getCollection());
+        // filter.run();
+        Sorted sorted = new Sorted(api.getCollection());
+        sorted.run();
     }
 }
