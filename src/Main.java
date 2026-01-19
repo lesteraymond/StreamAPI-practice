@@ -4,9 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<String> names = List.of("Hanni", "Minji", "Haerin", "Hyein", "Danielle");
+        List<String> names = List.of("Hanni", "Minji", "Haerin", "Hyein", "Danielle",
+                "Hanni", "Minji", "Haerin", "Hyein", "Danielle",
+                "Hanni", "Minji", "Haerin", "Hyein", "Danielle");
         List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        StreamAPI api = StreamAPI.create(numbers);
+        StreamAPI api = StreamAPI.create(names);
 
         // ForEach forEach = new ForEach(api.getCollection());
         // forEach.run();
@@ -14,7 +16,9 @@ public class Main {
         // map.run();
         // Filter filter = new Filter(api.getCollection());
         // filter.run();
-        Sorted sorted = new Sorted(api.getCollection());
-        sorted.run();
+        // Sorted sorted = new Sorted(api.getCollection());
+        // sorted.run();
+        Limit limit = new Limit(api.getCollection());
+        limit.run();
     }
 }
