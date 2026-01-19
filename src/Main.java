@@ -28,5 +28,7 @@ public class Main {
         // groupingBy.run();
         // FlatMap flatMap = new FlatMap(names);
         // flatMap.run();
+        Peek peek = new Peek(numbers);
+        peek.run();
     }
 }
