@@ -4,9 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<String> names = List.of("Hanni", "Minji", "Haerin", "Hyein", "Danielle",
-                "Hanni", "Minji", "Haerin", "Hyein", "Danielle",
-                "Hanni", "Minji", "Haerin", "Hyein", "Danielle");
+        List<String> names = List.of("Hanni", "Minji", "Haerin", "Hyein", "Danielle");
         List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         StreamAPI api = StreamAPI.create(numbers);
 
@@ -26,7 +24,9 @@ public class Main {
         // distinct.run();
         // Reducing reducing = new Reducing(api.getCollection());
         // reducing.run();
-        GroupingBy groupingBy = new GroupingBy(api.getCollection());
-        groupingBy.run();
+        // GroupingBy groupingBy = new GroupingBy(api.getCollection());
+        // groupingBy.run();
+        // FlatMap flatMap = new FlatMap(names);
+        // flatMap.run();
     }
 }
